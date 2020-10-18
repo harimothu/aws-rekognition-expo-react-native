@@ -28,9 +28,6 @@ export default class App extends React.Component {
   async readFile(file) {
     return await FileSystem.readAsStringAsync(file, { encoding: 'base64' });
   }
-
- 
-
   recognizeTextFromImage = async (path) => {
     console.log('In recognizeTextFromImage()');
     this.readFile(path).then((data) => {
