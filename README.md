@@ -12,6 +12,16 @@ export default AWS_CONFIG = {
     }
 };
 ```
+Install depedencies
+```
+npm install
+```
+Run the app
+```
+npm start
+or
+expo start
+```
 
 
 <img src="./screenshots/screenshot1.png" width="200" height="400" />
