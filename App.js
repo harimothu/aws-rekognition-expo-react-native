@@ -20,15 +20,16 @@ aws.config.update(AWS_CONFIG);
 
 export default class App extends React.Component {
 
+  state = {
+    loading: false,
+    detectedTexts: []
+  };
   //Reads file from local file system
   async readFile(file) {
     return await FileSystem.readAsStringAsync(file, { encoding: 'base64' });
   }
 
-  state = {
-    loading: false,
-    detectedTexts: []
-  };
+ 
 
   recognizeTextFromImage = async (path) => {
     console.log('In recognizeTextFromImage()');
